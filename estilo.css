@@ -100,15 +100,3 @@ body {
  "main" auto
  "aside" 100px
  "foorte" 50px / auto;
-}
-@media (min-width: 769px){grid-template:"header header header" 100px
-  "nav nav nav" 50px
-  "main main aside" auto
-  "foorte foorte foorte" 50px;}
-
-  @media (min-width: 1024px)
-  {grid-template:"header header header header header" 100px
-      "nav main main main aside" auto
-      "foorte foorte foorte foorte" 50px
-      / 20% auto auto auto 20%;
-  }

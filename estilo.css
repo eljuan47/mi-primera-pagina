@@ -38,3 +38,77 @@ input[type="email"]:hover {
   border: 5px rgb(2, 2, 13) solid;
   box-shadow: 5px rgb(255, 208, 0);
 }
+.button {background-color: #4CAF50 COLOR;
+  WHITE;PADDING: 15PX 32PX;
+   text-align: center;text-decoration: none;
+    DISPLAY: inline-blok;
+     font-size: 16px;margin: 4px 2px;
+      cursor: pointer}
+
+.button:hover{
+ border: #555 2px solid;
+ box-shadow: 5px 5px 5px #555;
+ color: red
+}
+table {border-collapse: collapse;
+width: 100%;}
+td, th {border: 1px solid black;
+ text-align: left;
+ padding: 8px}
+
+/*estilos de principal*/
+header{background: yellow;
+text-align: center;
+border-radius: 10px;
+padding: 1rem;
+color: rgb(94, 49, 49);
+grid-area: header;}
+
+nav{background: blue;
+ text-align: center;
+ border-radius: 10px;
+ padding: 1rem;
+ color: white;
+grid-area: nav;}
+
+ main{background: pink;
+     text-align: center;
+     border-radius: 10px;
+     padding: 1rem;
+     color: white;
+ grid-area: main;}
+
+     aside{background:rgb(206, 35, 206);
+         text-align: center;
+         border-radius: 10px;
+         padding: 1rem;
+         color: white;
+     grid-area: aside;}
+
+         footer{background: rgb(15, 216, 15);
+             text-align: center;
+             border-radius: 10px;
+             padding: 1rem;
+             color: white;
+         grid-area: foorte;}
+body {
+ display: grid;
+ gap: 2px;
+ grid-template:
+ "header" 100px
+ "nav" 50px
+ "main" auto
+ "aside" 100px
+ "foorte" 50px / auto;
+}
+@media (min-width: 769px){grid-template:"header header header" 100px
+  "nav nav nav" 50px
+  "main main aside" auto
+  "foorte foorte foorte" 50px;}
+
+  @media (min-width: 1024px)
+  {grid-template:"header header header header header" 100px
+      "nav main main main aside" auto
+      "foorte foorte foorte foorte" 50px
+      / 20% auto auto auto 20%;
+  }

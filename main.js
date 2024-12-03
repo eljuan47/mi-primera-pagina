@@ -8,6 +8,7 @@ function fSumar(){
   console.log(resultado)
 }
 
+
 function fRestar(){
   let num1 = parseInt(n1.value)
   let num2 = parseInt(n2.value)
